@@ -1,5 +1,11 @@
 # Análisis: De Monolito a Microservicios — Sistema de Gestión de Gimnasio
 
+# Integrantes:
+- Alejandro Amu (A00395686)
+- David Henao (A00394033)
+- Alejandro Torres (A00394983)
+- Juan Calderón (A00395803)
+
 ## 1. Sistema Monolítico Original
 
 El monolito `monilito-gimnasio-mcrs` es una aplicación Spring Boot única que gestiona cuatro dominios de negocio dentro de un mismo despliegue, una misma base de datos y un mismo proceso JVM:
