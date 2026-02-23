@@ -3,4 +3,4 @@
 ## Prerequisitos
 
 - Java 17+
-- Usar el script \.levantar-todo.ps1
+- Usar el script \.levantar-todo.ps1 (windows)
