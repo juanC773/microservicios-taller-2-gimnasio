@@ -41,7 +41,7 @@ public class ClaseService {
 
     public Clase programarClase(Clase clase) {
         Boolean entrenadorExiste = restTemplate.getForObject(
-                "http://ENTRENADOR-SERVICE/entrenadores/" + clase.getEntrenadorId().getEntrenadorid_value() + "/existe",
+                "http://entrenador-service/entrenadores/" + clase.getEntrenadorId().getEntrenadorid_value() + "/existe",
                 Boolean.class);
 
         if (entrenadorExiste == null || !entrenadorExiste) {
@@ -66,7 +66,7 @@ public class ClaseService {
         }
 
         PuedeAsistirClaseResponse response = restTemplate.getForObject(
-                "http://MIEMBRO-SERVICE/miembros/" + miembroId.getMiembroid_value() + "/puede-asistir-clase",
+                "http://miembro-service/miembros/" + miembroId.getMiembroid_value() + "/puede-asistir-clase",
                 PuedeAsistirClaseResponse.class);
 
         if (response == null || !response.isPuedeAsistir()) {

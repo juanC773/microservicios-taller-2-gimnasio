@@ -23,6 +23,6 @@ Write-Host "Iniciando Clases (8082)..." -ForegroundColor Cyan
 Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$root'; Write-Host 'Clases' -ForegroundColor Yellow; .\microservicio-clases-mcrs\mvnw.cmd -f microservicio-clases-mcrs\pom.xml spring-boot:run"
 
 Write-Host "Iniciando Notificaciones (8085)..." -ForegroundColor Cyan
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$root'; Write-Host 'Notificaciones' -ForegroundColor Yellow; .\microservicio-clases-mcrs\mvnw.cmd -f microservicio-notificaciones-mcrs\pom.xml spring-boot:run"
+Start-Process powershell -ArgumentList "-NoExit", "-Command", "Set-Location '$root'; Write-Host 'Notificaciones' -ForegroundColor Yellow; .\microservicio-notificaciones-mcrs\mvnw.cmd -f microservicio-notificaciones-mcrs\pom.xml spring-boot:run"
 
 Write-Host "Listo. Se abrieron 6 ventanas. Espera ~1 minuto y revisa http://localhost:8761. RabbitMQ: localhost:5672" -ForegroundColor Green

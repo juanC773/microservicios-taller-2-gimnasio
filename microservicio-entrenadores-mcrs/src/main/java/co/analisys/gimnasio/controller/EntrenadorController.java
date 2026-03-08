@@ -35,7 +35,6 @@ public class EntrenadorController {
     }
 
     @GetMapping("/{id}/existe")
-    @PreAuthorize("hasAnyRole('ROLE_ADMIN', 'ROLE_TRAINER', 'ROLE_MEMBER')")
     public boolean existeEntrenador(@PathVariable String id) {
         return entrenadorService.existeEntrenador(new EntrenadorId(id));
     }
